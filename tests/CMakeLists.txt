@@ -1,0 +1,1 @@
+add_executable(segfault segfault.c)
