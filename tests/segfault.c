@@ -5,16 +5,16 @@ void lock()
 
 }
 
-void func2()
+void func2(int* result)
 {
     lock();
-    int* i = NULL;
-    *i=42;
+    *result=42;
 }
 
 void func1()
 {
-    func2();
+  int *i = NULL;
+  func2(i);
 }
 
 int main(int, char*[])
